@@ -21,7 +21,7 @@ export class Company {
     @Column({type:'varchar'})
     public linkMap:string
     @ManyToMany(()=>User)
-    @JoinTable()
+    @JoinTable({name:'company_user'})
     users:User[]
     @OneToMany(() => Job, (job) => job.company)
     jobs: Job[]

@@ -24,7 +24,7 @@ __decorate([
 ], Category.prototype, "name", void 0);
 __decorate([
     (0, typeorm_1.ManyToMany)(() => job_1.Job),
-    (0, typeorm_1.JoinTable)(),
+    (0, typeorm_1.JoinTable)({ name: 'category_job' }),
     __metadata("design:type", Array)
 ], Category.prototype, "jobs", void 0);
 Category = __decorate([

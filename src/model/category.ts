@@ -9,6 +9,6 @@ export class Category {
     @Column({type: 'text'})
     public name: string;
     @ManyToMany(() => Job)
-    @JoinTable()
+    @JoinTable({name: 'category_job'})
     jobs:Job[]
 }

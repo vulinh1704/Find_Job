@@ -41,7 +41,7 @@ __decorate([
 ], Job.prototype, "endDate", void 0);
 __decorate([
     (0, typeorm_1.ManyToMany)(() => cv_1.Cv),
-    (0, typeorm_1.JoinTable)(),
+    (0, typeorm_1.JoinTable)({ name: 'job_cv' }),
     __metadata("design:type", Array)
 ], Job.prototype, "cvs", void 0);
 __decorate([

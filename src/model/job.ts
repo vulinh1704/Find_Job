@@ -17,7 +17,7 @@ export class Job{
     @Column({type:'date'})
     public endDate:Date
     @ManyToMany(() => Cv)
-    @JoinTable()
+    @JoinTable({name: 'job_cv'})
     cvs: Cv[]
     @ManyToOne(() => Company, (company) => company.jobs)
     company: Company
