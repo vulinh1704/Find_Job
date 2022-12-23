@@ -15,5 +15,9 @@ export class CompanyService {
         });
         return companies
     }
+    add = async (data) => {
+        let companies = await this.companyService.save(data);
+        return companies
+    }
 
 }

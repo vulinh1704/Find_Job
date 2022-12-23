@@ -3,6 +3,7 @@ declare class CompanyController {
     private companyService;
     constructor();
     getAll: (req: Request, res: Response) => Promise<void>;
+    add: (req: Request, res: Response) => Promise<void>;
 }
 declare const _default: CompanyController;
 export default _default;

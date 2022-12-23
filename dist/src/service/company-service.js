@@ -14,6 +14,10 @@ class CompanyService {
             });
             return companies;
         };
+        this.add = async (data) => {
+            let companies = await this.companyService.save(data);
+            return companies;
+        };
         this.companyService = data_source_1.AppDataSource.getRepository(company_1.Company);
     }
 }

@@ -14,6 +14,17 @@ class CompanyController {
                 });
             }
         };
+        this.add = async (req, res) => {
+            try {
+                let company = await this.companyService.add(req.body);
+                res.status(200).json(company);
+            }
+            catch (e) {
+                res.json({
+                    mess: e.message
+                });
+            }
+        };
         this.companyService = new company_service_1.CompanyService();
     }
 }

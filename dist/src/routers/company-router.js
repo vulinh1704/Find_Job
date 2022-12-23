@@ -8,4 +8,5 @@ const express_1 = require("express");
 const company_controller_1 = __importDefault(require("../controller/company-controller"));
 exports.companyRouter = (0, express_1.Router)();
 exports.companyRouter.get('', company_controller_1.default.getAll);
+exports.companyRouter.post('', company_controller_1.default.add);
 //# sourceMappingURL=company-router.js.map
