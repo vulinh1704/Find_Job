@@ -49,7 +49,7 @@ __decorate([
 ], Company.prototype, "linkMap", void 0);
 __decorate([
     (0, typeorm_1.ManyToMany)(() => user_1.User),
-    (0, typeorm_1.JoinTable)(),
+    (0, typeorm_1.JoinTable)({ name: 'company_user' }),
     __metadata("design:type", Array)
 ], Company.prototype, "users", void 0);
 __decorate([
